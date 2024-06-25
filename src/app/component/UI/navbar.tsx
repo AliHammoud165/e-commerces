@@ -1,8 +1,8 @@
 'use client'
-import { MenuIcon } from '@/app/assets/icons/Menu'
-import { CartIcon } from '@/app/assets/icons/cart'
-import { Logo } from '@/app/assets/icons/logo'
-import { ProfileIcon } from '@/app/assets/icons/person'
+import { MenuIcon } from '../../../../public/assets/icons/Menu'
+import { CartIcon } from '../../../../public/assets/icons/cart'
+import { Logo } from '../../../../public/assets/icons/logo'
+import { ProfileIcon } from '../../../../public/assets/icons/person'
 import React, { useState } from 'react'
 
 const Navbar = () => {

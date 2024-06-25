@@ -1,7 +1,7 @@
-import image from '../src/app/assets/image/image2.png'
-import icon1 from '../src/app/assets/image/palnt.png'
-import icon2 from '../src/app/assets/image/box.png'
-import icon3 from '../src/app/assets/image/TelephoneOutbound.png'
+import image from '../public/assets/image/image2.png'
+import icon1 from '../public/assets/image/palnt.png'
+import icon2 from '../public/assets/image/box.png'
+import icon3 from '../public/assets/image/TelephoneOutbound.png'
 const staticData = {
     cardsData: [
         {

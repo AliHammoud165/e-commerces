@@ -1,6 +1,6 @@
 // Footer.tsx
 
-import { Logo } from '@/app/assets/icons/logo';
+import { Logo } from '../../../../public/assets/icons/logo'
 import React from 'react';
 
 

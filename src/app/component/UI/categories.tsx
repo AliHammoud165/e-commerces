@@ -1,9 +1,9 @@
 // Categories.tsx
 
 import React from 'react';
-import Textcard from '../core/textcard'; // Adjust path as per your project structure
+import Textcard from '../core/textcard'; 
 import Card from '../core/card';
-import image from '../../assets/image/image2.png';
+import image from '../../../../public/assets/image/image2.png';
 import Button from '../core/button';
 
 const Categories: React.FC = () => {

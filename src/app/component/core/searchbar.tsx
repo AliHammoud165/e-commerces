@@ -1,5 +1,5 @@
 'use client'
-import { SearchIcon } from '@/app/assets/icons/search';
+import { SearchIcon } from '../../../../public/assets/icons/search';
 import React from 'react';
 
 interface SearchbarProps {

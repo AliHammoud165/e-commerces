@@ -1,6 +1,6 @@
 // Button.tsx
 'use client'
-import Arrow from '@/app/assets/icons/arowe'; 
+import Arrow from '../../../../public/assets/icons/arowe'; 
 import React from 'react';
 import { cn } from '../../../../utils/helpers';
 

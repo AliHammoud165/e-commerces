@@ -2,7 +2,7 @@ import React from 'react';
 import { Searchbar } from '../core/searchbar';
 import Image from 'next/image';
 
-import image from '../../assets/image/image.png'; 
+import image from '../../../../public/assets/image/image.png'; 
 const Hero = () => {
   return (
     <div className='h-128 px-4 xs:px-10 w-full bg-light-green-gray rounded-3xl flex'>
