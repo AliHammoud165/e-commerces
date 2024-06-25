@@ -1,30 +1,35 @@
-// Card.tsx
-
 import React from 'react';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
+import { cn } from '../../../../utils/helpers';
 
 export interface CardProps {
-  src: string;
+  type?:"AboutUs"|"Bestselling"
+  src: StaticImageData;
   alt: string;
   title?: string;
   price?: string;
+  cardClassName?: string;
+  imageClassName?: string;
+  imageH:number
+  imageW:number
 }
 
-const Card: React.FC<CardProps> = ({ src, alt, title, price }) => {
+const Card: React.FC<CardProps> = ({ src, alt, title, price, cardClassName, imageClassName,imageH,imageW, type }) => {
   return (
     <div className='h-full w-full rounded-2xl'>
-      <div className='relative w-full aspect-w-16 aspect-h-9'>
-        <Image
+      <div className='w-full flex items-center justify-center'>
+      <div   className={cn( 'relative  flex items-center justify-center',imageClassName)}>
+        <Image 
           src={src}
           alt={alt}
-          layout='fill'
-          objectFit='cover'
-          className='rounded-2xl'
+          height={imageH} 
+          width={imageW}           
         />
       </div>
-      <div className='p-4'>
+      </div>
+      <div className={cn( cardClassName)}>
         {title && <p className='font-bold text-lg'>{title}</p>}
-        {price && <p className='text-text-gray text-sm'>{price}</p>}
+        {price && <p className='text-text-gray text-sm font-bold '>{price}</p>}
       </div>
     </div>
   );

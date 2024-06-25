@@ -23,12 +23,16 @@ const config: Config = {
       },
       height: {
         128: '512px',
-        'my-height':'436px'
+        'my-height':'436px',
+        "about":'96px',
+        256:'1024px',
+        210.25:'841px'
       },
       width: {
         '70%': '70%',
         'card-width':"300px",
         'mywidth':"200px",
+        "about":'96px'
       },
       fontSize: {
         '6.5xl': '64px',
@@ -38,6 +42,9 @@ const config: Config = {
         '3': '3px',
         '6': '6px',
       },
+      screens:{
+        xs:'431px'
+      }
     },
   },
   plugins: [],

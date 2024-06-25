@@ -3,7 +3,7 @@ import { Landing } from "./pages/landing";
 
 export default function Home() {
   return (
-   <main className="px-x-25">
+   <main>
 <Landing/>
    </main>
   );
