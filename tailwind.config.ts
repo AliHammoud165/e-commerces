@@ -17,6 +17,9 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "custom-background": "url('/path/to/your/image.jpg')", 
       },
+      fontFamily: {
+        'myfont': ['var(--myfont)'],
+      },
       colors: {
         'light-green-gray': '#C1DCDC',
         'text-gray': 'rgba(30, 30, 30, 0.5)', 

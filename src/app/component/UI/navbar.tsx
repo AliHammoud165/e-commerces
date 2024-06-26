@@ -1,4 +1,5 @@
 'use client'
+import Link from 'next/link'
 import { MenuIcon } from '../../../../public/assets/icons/Menu'
 import { CartIcon } from '../../../../public/assets/icons/cart'
 import { Logo } from '../../../../public/assets/icons/logo'
@@ -17,9 +18,9 @@ const Navbar = () => {
     <div className='h-[100px] w-full flex items-center justify-between'>
       <div className='w-fit'><Logo/></div>
       <div className={`xs:flex  w-[30%] items-center justify-between  hidden`}>
-        <div><a href="/">Home</a></div>
-        <div><a href="/">Products</a></div>
-        <div><a href="/">Contacts</a></div>
+        <div><Link href="/">Home</Link></div>
+        <div><Link href="/">Products</Link></div>
+        <div><Link href="/">Contacts</Link></div>
       </div>
       <div className='flex xs:w-[10%] w-fit justify-between'>
         <div className='cursor-pointer' ><CartIcon/></div>

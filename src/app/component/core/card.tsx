@@ -23,7 +23,8 @@ const Card: React.FC<CardProps> = ({ src, alt, title, price, cardClassName, imag
           src={src}
           alt={alt}
           height={imageH} 
-          width={imageW}           
+          width={imageW} 
+          placeholder='blur'          
         />
       </div>
       </div>
