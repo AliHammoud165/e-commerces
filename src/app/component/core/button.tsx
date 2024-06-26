@@ -1,16 +1,16 @@
-// Button.tsx
 'use client'
-import Arrow from '../../../../public/assets/icons/arowe'; 
-import React from 'react';
+import React, { ReactNode } from 'react';
 import { cn } from '../../../../utils/helpers';
 
 interface ButtonProps {
   text: string;
-  className?: string; // Corrected classname to className
-  onClick?: () => void; // onClick handler function
+  className?: string; 
+  onClick?: () => void; 
+  icon?: ReactNode;
+
 }
 
-const Button: React.FC<ButtonProps> = ({ text, className, onClick }) => {
+const Button: React.FC<ButtonProps> = ({ text, className,icon, onClick }) => {
   const handleClick = () => {
     if (onClick) {
       onClick();
@@ -21,7 +21,7 @@ const Button: React.FC<ButtonProps> = ({ text, className, onClick }) => {
     <div className={cn('cursor-pointer rounded-lg h-full w-full bg-light-green-gray flex items-center justify-between p-5', className)}
          onClick={handleClick}>
       <p>{text}</p>
-      <div><Arrow /></div>
+      <div>{icon}</div>
     </div>
   );
 };

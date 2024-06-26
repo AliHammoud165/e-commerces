@@ -1,7 +1,7 @@
 import React from 'react';
 import { Searchbar } from '../core/searchbar';
 import Image from 'next/image';
-
+import { SearchIcon } from '../../../../public/assets/icons/search';
 import image from '../../../../public/assets/image/image.png'; 
 const Hero = () => {
   return (
@@ -19,7 +19,7 @@ const Hero = () => {
             <div>Customers</div>
           </div>
         </div>
-        <div className='h-full w-full pt-12'><Searchbar/></div>
+        <div className='h-full w-full pt-12'><Searchbar icon={<SearchIcon/>}/></div>
       </div>
       <div></div>
       <div className=' h-full w-1/2 justify-center items-end xs:flex hidden'>
